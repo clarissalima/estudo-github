@@ -1,0 +1,40 @@
+package entities;
+
+public class Product {
+	public String name;
+	public String email;
+	public int n;
+	
+	public Product(String name, String email, int n) {
+		this.name = name;
+		this.email = email;
+		this.n = n;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public int getN() {
+		return n;
+	}
+
+	public void setN(int n) {
+		this.n = n;
+	}
+	
+	
+	
+}

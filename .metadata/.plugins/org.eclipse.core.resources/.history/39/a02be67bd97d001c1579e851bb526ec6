@@ -1,0 +1,44 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Product;
+
+public class Rodar {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		
+		System.out.println("How many rooms will be rented?");
+		int v = sc.nextInt();
+
+		for (int i = 1; i <= v; i++) {
+			
+			
+				System.out.println();
+				System.out.println("Rent #" + v + ":");
+				System.out.print("Name: ");
+				sc.nextLine();
+				String name = sc.nextLine();
+				System.out.print("Email: ");
+				String email = sc.nextLine();
+				System.out.print("Room: ");
+				int n = sc.nextInt();
+				vect[n] = new Product(name, email);
+				
+				System.out.println("Busy rooms");
+				System.out.print(n + ": " + name + ", " + email);
+			}
+
+		
+		
+		System.out.println("Busy rooms");
+		System.out.println();
+
+		sc.close();
+	}
+
+}
